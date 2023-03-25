@@ -49,16 +49,16 @@ export default {
   },
   computed: {
     activePalyIcon() {
-      return 'src/components/pauseActive.svg'
+      return 'src/assets/pauseActive.svg'
     },
     inActivePalyIcon() {
-      return 'src/components/play.svg'
+      return 'src/assets/play.svg'
     },
     activeResetIcon() {
-      return 'src/components/resetActive.svg'
+      return 'src/assets/resetActive.svg'
     },
     inActiveResetIcon() {
-      return 'src/components/reset.svg'
+      return 'src/assets/reset.svg'
     }
   }
 }
@@ -85,7 +85,7 @@ export default {
           </div>
         </div>
         <div class="Addtimer" @click="addTimer">
-          <div class="AddtimerPlus"><img width="20" src="./components/plus.svg" /></div>
+          <div class="AddtimerPlus"><img width="20" src="./assets/plus.svg" /></div>
         </div>
       </div>
     </div>
