@@ -35,7 +35,7 @@ export default {
       this.timer[index].minutes = 0
       this.timer[index].hours = 0
       this.timer[index].isActive = false
-      return clearInterval(this.interval)
+      return clearInterval(this.timer[index].interval)
     },
     addTimer() {
       this.timer.push({
@@ -64,14 +64,12 @@ export default {
           <div class="controllers">
             <div class="start" @click="handleStart(index)">
               <img
-                :src="timer[index].isActive ? 'src/assets/pauseActive.svg' : 'src/assets/play.svg'"
+                :src="'src/assets/pauseActive.svg'"
               />
             </div>
             <div class="reset" @click="handleREset(index)">
               <img
-                :src="
-                  timer[index].isActive ? 'src/assets/resetActive.svg  ' : 'src/assets/reset.svg'
-                "
+                :src="timer[index].isActive ? 'src/assets/resetActive.svg' : 'src/assets/reset.svg'"
               />
             </div>
           </div>
