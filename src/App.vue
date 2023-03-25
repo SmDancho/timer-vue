@@ -49,16 +49,16 @@ export default {
   },
   computed: {
     activePalyIcon() {
-      return 'src/assets/pauseActive.svg'
+      return 'assets/pauseActive.svg'
     },
     inActivePalyIcon() {
-      return 'src/assets/play.svg'
+      return 'assets/play.svg'
     },
     activeResetIcon() {
-      return 'src/assets/resetActive.svg'
+      return 'assets/resetActive.svg'
     },
     inActiveResetIcon() {
-      return 'src/assets/reset.svg'
+      return 'assets/reset.svg'
     }
   }
 }
