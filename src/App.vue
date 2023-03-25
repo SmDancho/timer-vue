@@ -47,20 +47,6 @@ export default {
       })
     }
   },
-  computed: {
-    activePalyIcon() {
-      return '/assets/pauseActive.svg'
-    },
-    inActivePalyIcon() {
-      return '/assets/play.svg'
-    },
-    activeResetIcon() {
-      return '/assets/resetActive.svg'
-    },
-    inActiveResetIcon() {
-      return '/assets/reset.svg'
-    }
-  }
 }
 </script>
 
@@ -77,10 +63,10 @@ export default {
           <div class="divider"></div>
           <div class="controllers">
             <div class="start" @click="handleStart(index)">
-              <img :src="timer[index].isActive ? activePalyIcon : inActivePalyIcon" />
+              <img :src="timer[index].isActive ? '../src/assets/pauseActive.svg' : '../src/assets/play.svg'" />
             </div>
             <div class="reset" @click="handleREset(index)">
-              <img :src="timer[index].isActive ? activeResetIcon : inActiveResetIcon" />
+              <img :src="timer[index].isActive ? '../src/assets/resetActive.svg' : '../src/assets/reset.svg'" />
             </div>
           </div>
         </div>
