@@ -64,7 +64,7 @@ export default {
           <div class="controllers">
             <div class="start" @click="handleStart(index)">
               <img
-                :src="timer[index].isActive ? '../src/assets/pause.svg' : '../src/assets/play.svg'"
+                :src="timer[index].isActive ? './src/assets/pause.svg' : '../src/assets/play.svg'"
               />
             </div>
             <div class="reset" @click="handleREset(index)">
