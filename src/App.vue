@@ -46,7 +46,7 @@ export default {
         interval: ''
       })
     }
-  },
+  }
 }
 </script>
 
@@ -63,10 +63,16 @@ export default {
           <div class="divider"></div>
           <div class="controllers">
             <div class="start" @click="handleStart(index)">
-              <img :src="timer[index].isActive ? '../src/assets/pauseActive.svg' : '../src/assets/play.svg'" />
+              <img
+                :src="timer[index].isActive ? 'src/assets/pauseActive.svg' : 'src/assets/play.svg'"
+              />
             </div>
             <div class="reset" @click="handleREset(index)">
-              <img :src="timer[index].isActive ? '../src/assets/resetActive.svg' : '../src/assets/reset.svg'" />
+              <img
+                :src="
+                  timer[index].isActive ? 'src/assets/resetActive.svg  ' : 'src/assets/reset.svg'
+                "
+              />
             </div>
           </div>
         </div>
